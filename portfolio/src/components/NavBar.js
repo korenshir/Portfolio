@@ -3,8 +3,11 @@ import {NavLink} from 'react-router-dom'
 import SocialIcons, { SocialIcon } from 'react-social-icons'
 export default function NavBar() {
     return (
+      <div style={{fontFamily:"QuickSand"}}>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand"></link>
+ 
       <header className="bg-red-300">
-          <div className="items-center">
+          <div className="items-center" >
               <nav className=" flex">
                   <NavLink to="/" exact 
                   activeClassName="text-black"
@@ -25,11 +28,14 @@ export default function NavBar() {
                   <SocialIcon 
                   url="https://www.linkedin.com/in/shir-koren-232a67197" className="mr-4"
                   target="_blank" fgcolor="#fff" style={{height:35, width:35}}/>
-                  <SocialIcon url="https://github.com/korenshir" className="mr-4" target="_blank" fgcolor="#fff" style={{height:35, width:35}}/>
+                  <SocialIcon url="https://github.com/korenshir" className="mr-4" target="_blank" color="fff" fgcolor="#fff" style={{height:35, width:35}}/>
+                  <SocialIcon url="mailto:korenshir@gmail.com " className="mr-4" target="_blank" fgcolor="#fff" style={{height:35, width:35}}/>
+
                   </div>
               </nav>
 
           </div>
       </header>
+      </div>
     );
 }
