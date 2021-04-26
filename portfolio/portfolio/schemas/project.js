@@ -21,6 +21,19 @@ export default {
     {
         name:"link",
         type:"url"
+    },
+    {
+        name:"photoLink",
+        type:"url"
+    },
+    {
+        name:"dataManagement",
+        type:"string"
+    }
+    ,
+    {
+        name:"technologies",
+        type:"string"
     }
     ]
 

@@ -18,13 +18,9 @@ export default {
       },
     },
     {
-      name: 'image',
-      title: 'Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    },
+      name:"photoLink",
+      type:"url"
+  },
     {
       name: 'bio',
       title: 'Bio',
