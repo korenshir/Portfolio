@@ -2,7 +2,6 @@ import react from 'react'
 import React,{useEffect,useState} from 'react'
 import sanityClient from "./../client.js";
 import BlockContent from "@sanity/block-content-to-react";
-import background from "./../backgrounds/aboutme.JPG";
 
 export default function About() {
     const [author,setAuthor]= React.useState(null);
