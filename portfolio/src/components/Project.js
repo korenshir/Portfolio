@@ -1,5 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import sanityClient from "./../client.js"
+import image from '../backgrounds/projects.JPG'
+
 
 export default function Project() {
     const [projectData,setProjectData]= React.useState(null);
@@ -19,18 +21,22 @@ export default function Project() {
 
     return (
     <div style={{fontFamily:"QuickSand"}}>
+
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand"></link>
-     <main className="bg-green-100 min-h-screen p-12">
+     <main className="min-h-screen p-12" sr>
+
          <section className="container mx-auto" >
-             <h1 className="text-5xl flex justify-center cursive"> My Projects</h1>
+             <h1 className="text-5xl flex justify-center cursive" style={{color:'black'}}> My Projects</h1>
              <br/>
              <section className="grid grid cols-2 gap 8">
              {projectData && projectData.map((project,index)=>( 
-                <article className="relative rounded-lg shadow-xl bg-white p-16">
+                <article className="relative rounded-lg p-16" style={{borderColor:'black'}}>
                     <div style={{float:"left"}}>
-                    <img src={project.photoLink} width="100px"  style={{position:'absolute',right:150,marginTop:"20px", borderRadius:"10%"}}></img>
-
-                    <h3 className="text-grey-800 text-3xl font-bold mb-2 hover:text-red-700">
+                    {project.title=='Second Chance' ? 
+                    <img src={project.photoLink}  style={{position:'absolute',right:200,marginTop:"20px",height:'200px'}}></img> :
+                    <img src={project.photoLink}  style={{position:'absolute',right:100,marginTop:"20px",height:'180px'}}></img>
+             }
+                    <h3 className="text-black text-3xl font-bold mb-2 hover:text-red-700">
                         <a 
                         href={project.link} 
                         alt={project.title}
@@ -44,7 +50,7 @@ export default function Project() {
                             {new Date(project.date).toLocaleDateString()}{" "}
                         </span>
                         <span>
-                        <strong className="font-bold">Languages</strong>:{" "}
+                        <strong className="font-bold">Written in</strong>:{" "}
                             {project.languages}{" "}
                         </span>
                         <span>
@@ -56,7 +62,7 @@ export default function Project() {
                         <strong className="font-bold">Technologies</strong>:{" "}
                             {project.technologies}
                         </span>
-                        <p className="my-6 text-lg text-grey-700 leading-relaxed">{project.description}
+                        <p className="my-6 text-lg text-grey-700 leading-relaxed" style={{width:'80%'}}>{project.description}
                         </p>
                         <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-red-500 font-bold hover:underline hover:text-red-400"
                         >View The Project{" "}

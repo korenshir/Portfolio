@@ -6,22 +6,22 @@ export default function NavBar() {
       <div style={{fontFamily:"QuickSand"}}>
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand"></link>
  
-      <header className="bg-red-300">
+      <header style={{backgroundColor:'white'}}>
           <div className="items-center" >
               <nav className=" flex">
                   <NavLink to="/" exact 
                   activeClassName="text-black"
-                  className="inflex-flex items-center py-6 px-10 mr-4 text-red-100 hover:text-red-200 text-4xl font-bold cursive tracking-widest">
+                  className="inflex-flex items-center py-6 px-10 mr-4 text-black-200 hover:text-red-200 text-4xl font-bold cursive tracking-widest">
                       Shir Koren
                   </NavLink>
                   <NavLink to="/about"
                     activeClassName="font-bold"
-                  className="inflex-flex items-center py-8 px-10 mr-4 text-red-100 hover:text-red-200 navSmall tracking-widest">
+                  className="inflex-flex items-center py-8 px-10 mr-4 text-black-200 hover:text-red-200 navSmall tracking-widest">
                   About me
                   </NavLink>                  
                   <NavLink to="project"
                     activeClassName="font-bold"
-                  className="inflex-flex items-center py-8 px-10 mr-4 text-red-100 hover:text-red-200 navSmall tracking-widest">
+                  className="inflex-flex items-center py-8 px-10 mr-4 text-black-200 hover:text-red-200 navSmall tracking-widest">
                   Projects
                   </NavLink>
                   <div style={{position:'absolute',right:10,marginTop:"20px"}}>
