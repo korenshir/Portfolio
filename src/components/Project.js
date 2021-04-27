@@ -17,65 +17,56 @@ export default function Project() {
         technologies
         }`).then((data)=>setProjectData(data)).catch(console.error);
     },[])
+   
 
     return (
-    <div style={{fontFamily:"QuickSand"}}>
 
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand"></link>
-     <main className="min-h-screen p-12" sr>
+        <section id="portfolio" className="portfolio section-bg">
+                     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand"></link>
 
-         <section className="container mx-auto" >
-             <h1 className="text-5xl flex justify-center cursive" style={{color:'black'}}> My Projects</h1>
-             <br/>
-             <section className="grid grid cols-2 gap 8">
-             {projectData && projectData.map((project,index)=>( 
-                <article className="relative rounded-lg p-16" style={{borderColor:'black'}}>
-                    <div style={{float:"left"}}>
-                    {project.title==='Second Chance' ? 
-                    <img src={project.photoLink}  alt="project" style={{position:'absolute',right:200,marginTop:"20px",height:'200px'}}></img> :
-                    <img src={project.photoLink} alt="current project" style={{position:'absolute',right:100,marginTop:"20px",height:'180px'}}></img>
-             }
-                    <h3 className="text-black text-3xl font-bold mb-2 hover:text-red-700">
-                        <a 
-                        href={project.link} 
-                        alt={project.title}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >{project.title}</a>
-                    </h3>
-                    <div className="text-gray-500 text-xs space-x">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title">
+            <h2>Portfolio</h2>
+          </div>
+          <div className="row portfolio-container" data-aos="fade-up" data-aos-delay={200}>
+       {projectData && projectData.map((project,index)=>( 
+            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
+                <img src={project.photoLink} className="img-fluid" alt="" href={project.link} />
+                <div className="portfolio-info">
+                  <h4>{project.title}</h4>
+               
+                  <div className="text-gray-500 text-xs space-x">
                         <span>
-                            <strong className="font-bold">Finished on</strong>:{" "}
+                             <strong className="font-bold">Finished on</strong>:{" "}
                             {new Date(project.date).toLocaleDateString()}{" "}
-                        </span>
-                        <span>
-                        <strong className="font-bold">Written in</strong>:{" "}
-                            {project.languages}{" "}
-                        </span>
-                        <span>
-                        <strong className="font-bold">Data Management</strong>:{" "}
-                            {project.dataManagement}
-                        </span>
-                        <br/>
-                        <span>
-                        <strong className="font-bold">Technologies</strong>:{" "}
-                            {project.technologies}
-                        </span>
-                        <p className="my-6 text-lg text-grey-700 leading-relaxed" style={{width:'80%'}}>{project.description}
-                        </p>
-                        <a href={project.link} rel="noopener noreferrer" target="_blank" className="text-red-500 font-bold hover:underline hover:text-red-400"
-                        >View The Project{" "}
-                        <span role="img" aria-label="right pointer"> &#128073;</span>
-                        </a>
-                    </div>
-                    </div>
-                </article>
-                
-                ))}
-             </section>
-         </section>
-     </main>
-     </div>
+                         </span>
+                         <br/>
+                         <span>
+                         <strong className="font-bold">Written in</strong>:{" "}
+                             {project.languages}{" "}
+                         </span>
+                         <br/>
+                         <span>
+                         <strong className="font-bold">Data Management</strong>:{" "}
+                             {project.dataManagement}
+                         </span>
+                         <br/>
+                         <span>
+                         <strong className="font-bold">Technologies</strong>:{" "}
+                             {project.technologies}
+                         </span>
+                         </div>
+                  <div className="portfolio-links">
+                    <a href={project.link} className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           ))}          
+          </div>
+        </div>
+      </section>
 
     );
 }
