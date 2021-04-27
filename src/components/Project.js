@@ -32,8 +32,8 @@ export default function Project() {
                 <article className="relative rounded-lg p-16" style={{borderColor:'black'}}>
                     <div style={{float:"left"}}>
                     {project.title==='Second Chance' ? 
-                    <img src={project.photoLink}  alt="project image" style={{position:'absolute',right:200,marginTop:"20px",height:'200px'}}></img> :
-                    <img src={project.photoLink} alt="current project image" style={{position:'absolute',right:100,marginTop:"20px",height:'180px'}}></img>
+                    <img src={project.photoLink}  alt="project" style={{position:'absolute',right:200,marginTop:"20px",height:'200px'}}></img> :
+                    <img src={project.photoLink} alt="current project" style={{position:'absolute',right:100,marginTop:"20px",height:'180px'}}></img>
              }
                     <h3 className="text-black text-3xl font-bold mb-2 hover:text-red-700">
                         <a 
