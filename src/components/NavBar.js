@@ -1,6 +1,5 @@
-import react from 'react'
 import {NavLink} from 'react-router-dom'
-import SocialIcons, { SocialIcon } from 'react-social-icons'
+import { SocialIcon } from 'react-social-icons'
 export default function NavBar() {
     return (
       <div style={{fontFamily:"QuickSand"}}>
