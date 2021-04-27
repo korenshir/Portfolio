@@ -1,4 +1,3 @@
-import react from 'react'
 import image from '../612.jpg'
 export default function Home() {
     return (
