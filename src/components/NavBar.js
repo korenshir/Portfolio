@@ -2,6 +2,7 @@
 export default function NavBar() {
     return (
       <div style={{fontFamily:"QuickSand"}}>
+         <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> 
           <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
             <header id="header" className="d-flex flex-column justify-content-center">
         <nav id="navbar" className="navbar nav-menu">

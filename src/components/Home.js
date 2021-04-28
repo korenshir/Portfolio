@@ -2,7 +2,8 @@ export default function Home() {
     return (
         <section id="hero" className="d-flex flex-column justify-content-center">
         <div className="container" data-aos="zoom-in" data-aos-delay={100}>
-          <h1 className="cursive">Shir Koren</h1>
+          <h1 className="cursive" style={{fontSize:"80px"}}>Shir Koren</h1>
+          <br/>
           <p>Front End Developer </p>
           <div className="social-links">
             <a href="https://github.com/korenshir" className="github"><i className="bx bxl-github" /></a>
