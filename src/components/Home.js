@@ -1,15 +1,15 @@
-import image from '../612.jpg'
 export default function Home() {
     return (
-    <main>
-        <img src={image} alt="" className="absolute object-cover w-full h-full"/>
-        <section className="relative flex justify-center min-h-screen pt-12 lg:pt-40 px-8">
-            <h1 className="text-3xl text-green-100 font-bold cursive leading-none home-name">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Portfolio.
-            </h1>
-        </section>
-        
-    </main>
+        <section id="hero" className="d-flex flex-column justify-content-center">
+        <div className="container" data-aos="zoom-in" data-aos-delay={100}>
+          <h1>Shir Koren</h1>
+          <p>Front End Developer </p>
+          <div className="social-links">
+            <a href="https://github.com/korenshir" className="github"><i className="bx bxl-github" /></a>
+            <a href="mailto:korenshir@gmail.com" className="email"><i className="bx bxs-envelope" /></a>
+            <a href="https://www.linkedin.com/in/shir-koren-232a67197" className="linkedin"><i className="bx bxl-linkedin" /></a>
+          </div>
+        </div>
+      </section>
     );
 }
