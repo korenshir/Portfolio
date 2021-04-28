@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #0563bb;
+  color: #f3e1a5ab;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #f3e1a5ab;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0563bb;
+  background: #f3e1a5ab;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #f3e1a5ab;
   color: #fff;
 }
 
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
   color: #fff;
-  background: #0563bb;
+  background: #d4b266;
 }
 
 .nav-menu a:hover span, .nav-menu .active span, .nav-menu li:hover > a span {
@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #0563bb;
+  background-color: #d4b266;
 }
 
 /*--------------------------------------------------------------
@@ -1189,4 +1189,9 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.page-wrapper {
+  background-color: #fff;
+  min-height: 100vh; /* Important bit */
 }
