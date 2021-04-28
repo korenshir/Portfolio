@@ -9,13 +9,16 @@ import NavBar from './components/NavBar'
 export default function App() {
   return (
 <BrowserRouter>
-<NavBar/>
+<Home/>
+<About/>
+<Project/>
+{/* <NavBar/>
 <Switch>
   <Route component={Home} exact path='/' />
   <Route component={About} path='/about' />
   <Route component={Project} path='/project' />
 
-</Switch>
+</Switch> */}
 </BrowserRouter>
   );
 }
