@@ -4,7 +4,7 @@ export default function Home() {
         <div className="container" data-aos="zoom-in" data-aos-delay={100}>
           <h1 className="cursive" style={{fontSize:"80px"}}>Shir Koren</h1>
           <br/>
-          <p>Front End Developer </p>
+          <p>Full Stack Developer </p>
           <div className="social-links">
             <a href="https://github.com/korenshir" className="github"><i className="bx bxl-github" /></a>
             <a href="mailto:korenshir@gmail.com" className="email"><i className="bx bxs-envelope" /></a>
